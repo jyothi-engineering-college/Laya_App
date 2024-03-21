@@ -1,0 +1,59 @@
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('./fonts/ClashDisplay-Bold.otf') format('woff');
+  /* You can include other font formats here if needed */
+}
+@font-face {
+  font-family: 'ClashDisplay-reg';
+  src: url('./fonts/ClashDisplay-Regular.otf') format('woff');
+  /* You can include other font formats here if needed */
+}
+
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Joti+One&display=swap');
+
+body{
+background-color: #FFE7E9;
+}
+.logog
+{
+  height: 40px;
+  width: auto;
+}
+
+.header {
+  display: flex;
+  font-family: "Joti One", serif;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+}
+.header p{
+  margin: 0;
+}
+.livee
+{
+  font-family: ClashDisplay-reg;
+  position: relative;
+}
+.lvp
+{
+  position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px; /* Optional: Add some padding for better visibility */
+}
+.ln
+{
+  margin: 0;
+  font-size: 15px;
+  color: #ffffff;
+}
+.item1
+{
+  font-family: ClashDisplay-Bold;
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+}
