@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: 'ClashDisplay-Bold';
-  src: url('./fonts/ClashDisplay-Bold.otf') format('woff');
+  src: url('../fonts/ClashDisplay-Bold.otf') format('woff');
   /* You can include other font formats here if needed */
 }
 @font-face {
   font-family: 'ClashDisplay-reg';
-  src: url('./fonts/ClashDisplay-Regular.otf') format('woff');
+  src: url('../fonts/ClashDisplay-Regular.otf') format('woff');
   /* You can include other font formats here if needed */
 }
 
