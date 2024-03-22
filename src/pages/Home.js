@@ -2,7 +2,7 @@ import "../css/Home.css";
 import logo from "../img/header_jy.png";
 import liveey from "../img/livv.png";
 import dum from "../img/dumms.gif";
-import { RiTimeLine } from "@remixicon/react";
+import 'remixicon/fonts/remixicon.css'
 
 
 function Home() {
@@ -49,21 +49,44 @@ function Home() {
         <p className="rhd">Upcoming Events</p>
       <div className="shoo"></div>
       <div className="upev">
+
         <div className="upsf">
           <div className="upsn">
           <center><p className="streg">Stage</p>
             <p className="stbold">2</p></center>
           </div>
           <div className="upsd">
-            <h2>Essay Writing English</h2>
-            <p><RiTimeLine
-            size={16} // set custom `width` and `height`
-            color="red" // set `fill` color
-            className="my-icon" // add custom class name
-        />09.00 am onwards</p>
-            <p>60 people participating</p>
+            <h2>Light Music</h2>
+            <p><i class="ri-time-line" width="16px" height="16px"></i> 09.00 am onwards</p>
+            <p><i class="ri-team-line"></i> 60 people participating</p>
           </div>
         </div>
+
+        <div className="upsf">
+          <div className="upsn">
+          <center><p className="streg">Stage</p>
+            <p className="stbold">2</p></center>
+          </div>
+          <div className="upsd">
+            <h2>Light Music</h2>
+            <p><i class="ri-time-line" width="16px" height="16px"></i> 09.00 am onwards</p>
+            <p><i class="ri-team-line"></i> 60 people participating</p>
+          </div>
+        </div>
+
+        <div className="upsf">
+          <div className="upsn">
+          <center><p className="streg">Stage</p>
+            <p className="stbold">2</p></center>
+          </div>
+          <div className="upsd">
+            <h2>Light Music</h2>
+            <p><i class="ri-time-line" width="16px" height="16px"></i> 09.00 am onwards</p>
+            <p><i class="ri-team-line"></i> 60 people participating</p>
+          </div>
+        </div>
+
+        
       </div>
       </div>
     
