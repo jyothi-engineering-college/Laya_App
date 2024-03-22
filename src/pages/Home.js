@@ -3,9 +3,12 @@ import logo from "../img/header_jy.png";
 import liveey from "../img/livv.png";
 import dum from "../img/dumms.gif";
 import eclipse from"../img/ellipse-1.svg";
+import { IonContent } from "@ionic/react";
 
 function Home() {
   return (
+        <IonContent>
+
     <div className="App">
 
       <div className="header">
@@ -48,6 +51,7 @@ function Home() {
         <p className="rhd">Upcoming Events</p>
       <div className="shoo"></div>
       </div>
+      </IonContent>
     
   );
 }
