@@ -4,7 +4,7 @@ const Result = () => {
   return (
     <div>
           <h1 className="resultheader">Result</h1>
-          <div className="shoo"></div>
+          <div className="shooresult"></div>
 
       <center>
         {" "}
