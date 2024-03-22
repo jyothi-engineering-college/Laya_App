@@ -175,11 +175,23 @@ p{
   margin-bottom: 6px;
   font-weight: 400;
 }
-.upev
-{
+.upev {
+  
   display: inline-flex;
   flex-direction: row;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap;
   gap: 20px;
+  padding: 20px; /* Adding padding for better spacing */
+  margin: 0px; /* Centering the container */
+  width: fit-content; /* Adjusting container width based on content */
 }
+.ucontainer
+{overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Prevent items from wrapping */
+}
+.ucontainer::-webkit-scrollbar {
+  display: none;
+}
+
+  

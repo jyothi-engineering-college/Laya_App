@@ -48,6 +48,7 @@ function Home() {
         </div>
         <p className="rhd">Upcoming Events</p>
       <div className="shoo"></div>
+      <div className="ucontainer">
       <div className="upev">
 
         <div className="upsf">
@@ -86,8 +87,8 @@ function Home() {
           </div>
         </div>
 
-        
-      </div>
+
+      </div></div>
       </div>
     
   );
