@@ -11,7 +11,6 @@ const Result = () => {
         <div className="imgevent"></div>
       </center>
       <div className="eventname">Oppana</div>
-      {/* <div className="table-responsive"> */}
       <center>
         <table>
           <tr>

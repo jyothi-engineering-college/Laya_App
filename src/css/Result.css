@@ -18,7 +18,7 @@ body {
  margin-top: 30px;
 }
 th {
-  padding-top: 20px;
+  padding-top: 10px !important;
   font-family: ClashDisplay-Bold;
 }
 td {
@@ -34,7 +34,7 @@ table {
   border-collapse: separate;
   border: 1px #ffdfe2 solid;
   box-shadow: 0px 0px 23.6px 1px rgba(152, 1, 19, 0.32);
-  border-radius: 19px;
+  border-radius: 20px;
   font-family: ClashDisplay-reg;
 }
 
@@ -48,19 +48,33 @@ table {
 .place1 {
   border-radius: 4px;
   border: 1px solid #ffd700;
+  padding: 3px 0 3px 0;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 30%;
+  float: left;
   background: rgba(255, 215, 0, 0.31);
 }
 
 .place2 {
   border-radius: 4px;
   border: 1px solid #c0c0c0;
+  padding: 3px 0 3px 0;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 30%;
+  float: left;
   background: rgba(192, 192, 192, 0.31);
 }
 
 .place3 {
   border-radius: 4px;
   border: 1px solid #cd7f32;
-  background: rgba(205, 127, 50, 0.31);
+  padding: 3px 0 3px 0;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 30%;
+  float: left;  background: rgba(205, 127, 50, 0.31);
 }
 
 .imgevent {
@@ -84,14 +98,11 @@ table {
   top: 173px;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
+  width: 150px;
   z-index: 20;
   color: #fff;
   font-family: ClashDisplay-Bold;
   font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .shooresult {

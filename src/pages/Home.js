@@ -4,12 +4,15 @@ import liveey from "../img/livv.png";
 import dum from "../img/dumms.gif";
 import 'remixicon/fonts/remixicon.css'
 
+import { IonContent } from "@ionic/react";
 
 function Home() {
   return (
+        <IonContent>
+
     <div className="App">
 
-      <div className="header">
+      <div className="header"> 
         <p>Laya</p>
         <img src={logo} alt="jylogo" className="logog"></img>
       </div>
@@ -89,6 +92,7 @@ function Home() {
         
       </div>
       </div>
+      </IonContent>
     
   );
 }
