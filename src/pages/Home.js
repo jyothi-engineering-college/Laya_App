@@ -7,6 +7,7 @@ import 'remixicon/fonts/remixicon.css';
 import { IonContent } from "@ionic/react";
 import Header from "../components/header/Header";
 import LatestResults from "../components/LatestResults/LatestResults";
+import UpcomingEvents from "../components/UpcomingEvents/UpcomingEvents";
 
 function Home() {
   return (
@@ -27,48 +28,9 @@ function Home() {
 
         <p className="rhd">Upcoming Events</p>
       <div className="shoo"></div>
-      <div className="ucontainer">
-      <div className="upev">
-
-        <div className="upsf">
-          <div className="upsn">
-          <center><p className="streg">Stage</p>
-            <p className="stbold">2</p></center>
-          </div>
-          <div className="upsd">
-            <h2>Light Music</h2>
-            <p><i class="ri-time-line" width="16px" height="16px"></i> 09.00 am onwards</p>
-            <p><i class="ri-team-line"></i> 60 people participating</p>
-          </div>
-        </div>
-
-        <div className="upsf">
-          <div className="upsn">
-          <center><p className="streg">Stage</p>
-            <p className="stbold">2</p></center>
-          </div>
-          <div className="upsd">
-            <h2>Light Music</h2>
-            <p><i class="ri-time-line" width="16px" height="16px"></i> 09.00 am onwards</p>
-            <p><i class="ri-team-line"></i> 60 people participating</p>
-          </div>
-        </div>
-
-        <div className="upsf">
-          <div className="upsn">
-          <center><p className="streg">Stage</p>
-            <p className="stbold">2</p></center>
-          </div>
-          <div className="upsd">
-            <h2>Light Music</h2>
-            <p><i class="ri-time-line" width="16px" height="16px"></i> 09.00 am onwards</p>
-            <p><i class="ri-team-line"></i> 60 people participating</p>
-          </div>
-        </div>
-
-
-      </div></div>
       
+      <UpcomingEvents></UpcomingEvents>
+
       <p className="rhd">Top Houses</p>
       <div className="shoo"></div>
       <div className="teamup">

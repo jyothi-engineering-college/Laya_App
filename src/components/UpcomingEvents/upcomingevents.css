@@ -1,0 +1,72 @@
+.streg
+{
+  color: #FFF;
+
+font-family: ClashDisplay-reg;
+font-size: 20px;
+margin: 0;
+}
+.stbold
+{
+  font-family: ClashDisplay-Bold;
+  color: #FFF;
+font-size: 48px;
+margin: 0;
+}
+.upsn
+{
+  width: 101px;
+height: 99px;
+border-radius: 13px;
+background: #980113;
+box-shadow: 0px 4px 7.3px 0px rgba(255, 171, 150, 0.30);
+justify-content: center;
+}
+.upsf
+{
+  border-radius: 19px;
+background: #FFDFE2;
+box-shadow: 0px 0px 23.6px 1px rgba(152, 1, 19, 0.32);
+padding-left: 8px;
+padding-top: 8px;
+padding-bottom: 8px;
+width:295px;
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+.upsd h2
+{
+  font-family: ClashDisplay-Bold;
+  color: #180003;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.upsd p{
+  font-family: ClashDisplay-reg;
+  color: #180003;
+  font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+.upev {
+  
+  display: inline-flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px; /* Adding padding for better spacing */
+  margin: 0px; /* Centering the container */
+  width: fit-content; /* Adjusting container width based on content */
+}
+.ucontainer
+{overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Prevent items from wrapping */
+}
+.ucontainer::-webkit-scrollbar {
+  display: none;
+}
