@@ -31,13 +31,15 @@ import AllItems from "./pages/AllItems";
 import Stagedetails from "./pages/Stagedetails";
 import Live from "./pages/Live";
 
+import "../src/css/App.css"
+
 setupIonicReact({ mode: "md" });
 function App() {
   return (
     <IonApp>
       <IonContent className="ion-padding">
         <IonReactRouter>
-          <IonTabs>
+          <IonTabs >
             <IonRouterOutlet>
 
               <Route path="/" render={() => <Home />} exact={true} />
