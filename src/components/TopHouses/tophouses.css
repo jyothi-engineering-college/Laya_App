@@ -1,0 +1,58 @@
+.teamup
+{
+  display: flex;
+  gap: 100px;
+  margin-bottom: 8px;
+}
+.teamdown
+{
+  display: flex;
+  margin-left: 92px;
+  gap: 100px;
+}
+
+.teamind
+{
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+}
+.teamp p{
+  color: #180003;
+margin: 0;
+text-align: left;
+font-family: ClashDisplay-reg;
+font-size: 10px;
+}
+.teamp h3{
+  color: #180003;
+margin: 0;
+font-family: ClashDisplay-bold;
+font-size: 24px;
+}
+
+/*color section*/
+.tyellow
+{
+  width: 4px;
+height: 45px;;
+  background-color: #FFE500;
+}
+.tgreen
+{
+  width: 4px;
+height: 45px;;
+  background-color: #4AE800;
+}
+.tblue
+{
+  width: 4px;
+height: 45px;;
+  background-color: #0029FF;
+}
+.tred
+{
+  width: 4px;
+height: 45px;;
+  background-color: #FF001E;
+}
