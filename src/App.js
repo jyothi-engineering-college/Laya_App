@@ -30,6 +30,7 @@ import "@ionic/react/css/display.css";
 import AllItems from "./pages/AllItems";
 import Stagedetails from "./pages/Stagedetails";
 import Live from "./pages/Live";
+import withSplashScreen from './components/withSplashScreen';
 
 import "../src/css/App.css"
 
@@ -91,4 +92,4 @@ function App() {
   );
 }
 
-export default App;
+export default withSplashScreen(App); 
