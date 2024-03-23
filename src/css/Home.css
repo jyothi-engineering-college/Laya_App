@@ -34,37 +34,7 @@ ion-content{
 .header p{
   margin: 0;
 }
-.livee
-{
-  font-family: ClashDisplay-reg;
-  position: relative;
-  
-}
-.lvp
-{
-  position: absolute;
-    top: 75px;
-    left: 33px;
-    padding: 10px;
-     /* Optional: Add some padding for better visibility */
-}
-.ln
-{
-  margin: 0;
-  position: absolute;
-  top: -7px;
-  font-size: 15px;
-  color: #ffffff;
-  
-}
-.item1
-{
-  font-family: ClashDisplay-Bold;
-  font-size: 24px;
-  margin: 0;
-  color: #ffffff;
-  text-align: left;
-}
+
 .dumy
 {
   width: 15px;
@@ -89,40 +59,7 @@ ion-content{
 font-family: "ClashDisplay-Bold";
 font-size: 28px;
 }
-.rsltl {
-  margin-left: 10px;
-  overflow-x: auto ; /* Enable horizontal scrolling */
-  white-space: nowrap;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; /* Prevent items from wrapping */
-}
-.rsltl1::-webkit-scrollbar {
-  display: none;
-}
-.frame1 {
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap;
-  display: inline-flex; /* Display items as inline-flex */
-  flex-direction: row;
-  gap: 20px;
-  padding: 9px 0px 11px 10px;
-}
 
-.eachf {
-  background-image: url("../img/ellipse-1.svg");
-  width: 130px;
-  height: 130px;
-  margin-right: 10px; /* Add spacing between items */
-}
-
-.fitem1 {
-  font-family: ClashDisplay-Bold;
-  font-size: 16px;
-  color: #FFF;
-  margin: 0;
-  text-align: center;
-  line-height: 130px; /* Center the text vertically */
-}
 .streg
 {
   color: #FFF;

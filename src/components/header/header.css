@@ -1,0 +1,31 @@
+.livee
+{
+  font-family: ClashDisplay-reg;
+  position: relative;
+  
+}
+.lvp
+{
+  position: absolute;
+    top: 75px;
+    left: 33px;
+    padding: 10px;
+     /* Optional: Add some padding for better visibility */
+}
+.ln
+{
+  margin: 0;
+  position: absolute;
+  top: -7px;
+  font-size: 15px;
+  color: #ffffff;
+  
+}
+.item1
+{
+  font-family: ClashDisplay-Bold;
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+  text-align: left;
+}
