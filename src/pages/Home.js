@@ -92,6 +92,36 @@ function Home() {
 
 
       </div></div>
+      <p className="rhd">Top Houses</p>
+      <div className="shoo"></div>
+      <div className="teamup">
+        <div className="teamind">
+          <div className="tyellow"></div>
+          <div className="teamp">
+        <p>Team Yellow</p>
+        <h3>256 pt</h3></div></div>
+
+        <div className="teamind">
+          <div className="tgreen"></div>
+          <div className="teamp">
+        <p>Team Green</p>
+        <h3>256 pt</h3></div></div>
+
+      </div>
+      <div className="teamdown">
+      <div className="teamind">
+          <div className="tblue"></div>
+          <div className="teamp">
+        <p>Team Blue</p>
+        <h3>256 pt</h3></div></div>
+
+        <div className="teamind">
+          <div className="tred"></div>
+          <div className="teamp">
+        <p>Team Red</p>
+        <h3>256 pt</h3></div></div>
+
+      </div>
       </div>
       </IonContent>
     

@@ -70,10 +70,7 @@ function App() {
                 <IonLabel>Events</IonLabel>
               </IonTabButton>
 
-              <IonTabButton tab="result" href="/result">
-                <IonIcon icon={school} />
-                <IonLabel>Result</IonLabel>
-              </IonTabButton>
+              
             </IonTabBar>
           </IonTabs>
         </IonReactRouter>
