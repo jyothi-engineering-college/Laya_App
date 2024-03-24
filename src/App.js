@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Route, Redirect } from "react-router";
-import { home,school,radio,albums} from "ionicons/icons";
+import { homeOutline,school,radio,albums} from "ionicons/icons";
 
 import Home from "./pages/Home";
 import Result from "./pages/Result";
@@ -45,7 +45,6 @@ function App() {
             <IonRouterOutlet>
               <Route path="/" render={() => <Home />} exact={true} />
               <Route path="/files" render={() => <Files />} />
-              <Route path="/stage-details" render={() => <Stagedetails />} />
               <Route path="/live" render={() => <Live />} />
               <Route path="/result" render={() => <Result />} />
               <Route path="/allresults" render={() => <AllItems />} />
@@ -53,7 +52,7 @@ function App() {
 
             <IonTabBar slot="bottom">
               <IonTabButton tab="home" href="/">
-                <IonIcon icon={home} />
+                <IonIcon icon={homeOutline} />
                 <IonLabel>Home</IonLabel>
               </IonTabButton>
 

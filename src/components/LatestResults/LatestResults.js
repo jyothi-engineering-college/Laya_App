@@ -46,7 +46,7 @@ function LatestResults({ docId }) {
             </div>
 
             <div className="eachf">
-            <Link className='linkey' to="/allitems">Get More</Link>
+            <Link className='linkey' to="/allresults">Get More</Link>
             </div>
           </div>
         </div>
