@@ -1,4 +1,9 @@
-import { setupIonicReact, IonApp, IonContent } from "@ionic/react";
+import {
+  setupIonicReact,
+  IonApp,
+  IonContent,
+  IonRouterLink,
+} from "@ionic/react";
 import {
   IonTabs,
   IonTabBar,
@@ -9,7 +14,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Route, Redirect } from "react-router";
-import { homeOutline,school,radio,albums} from "ionicons/icons";
+import { homeOutline, school, radio, albums } from "ionicons/icons";
 
 import Home from "./pages/Home";
 import Result from "./pages/Result";
@@ -28,13 +33,12 @@ import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/flex-utils.css";
 import "@ionic/react/css/display.css";
 import Files from "./pages/Files";
-import Stagedetails from "./pages/Stagedetails";
 import Live from "./pages/Live";
-import withSplashScreen from './components/withSplashScreen';
+import withSplashScreen from "./components/withSplashScreen";
 import AllItems from "./pages/AllItems";
-import "../src/css/App.css"
+import "../src/css/App.css";
 import Offstage from "./pages/Offstage";
-
+import Error from "./pages/Error";
 
 setupIonicReact({ mode: "md" });
 function App() {
@@ -50,6 +54,7 @@ function App() {
               <Route path="/live" render={() => <Live />} />
               <Route path="/result" render={() => <Result />} />
               <Route path="/allresults" render={() => <AllItems />} />
+              <Route component={Error} />
             </IonRouterOutlet>
 
             <IonTabBar slot="bottom">
@@ -92,4 +97,4 @@ function App() {
   );
 }
 
-export default withSplashScreen(App); 
+export default withSplashScreen(App);
