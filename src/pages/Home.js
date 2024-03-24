@@ -12,34 +12,33 @@ import TopHouses from "../components/TopHouses/TopHouses";
 
 function Home() {
   return (
-        <IonContent>
-    <div className="App">
+    <IonContent>
+      <div className="App">
+        <div className="header">
+          <img style={{borderRadius:"50%",height:"50px",marginRight:"-150px"}} src={require("../img/logo.jpg")} alt="" srcset="" />
+          <p>Laya</p>
+          <img src={logo} alt="jylogo" className="logog"></img>
+        </div>
 
-      <div className="header"> 
-        <p>Laya</p>
-        <img src={logo} alt="jylogo" className="logog"></img>
-      </div>
+        <Header docId="header"></Header>
 
-      <Header docId="header"></Header>
+        <p className="rhd">Latest Results</p>
+        <div className="shoo"></div>
 
-      <p className="rhd">Latest Results</p>
-      <div className="shoo"></div>
-     
-      <LatestResults docId="latestres"></LatestResults>
+        <LatestResults docId="latestres"></LatestResults>
 
         <p className="rhd">Upcoming Events</p>
-      <div className="shoo"></div>
-      
-      <UpcomingEvents></UpcomingEvents>
+        <div className="shoo"></div>
 
-      <p className="rhd">Top Houses</p>
-      <div className="shoo"></div>
-      
-      <TopHouses docId="tophouse"></TopHouses>
-      <div className="sthalam"></div>
+        <UpcomingEvents></UpcomingEvents>
+
+        <p className="rhd">Top Houses</p>
+        <div className="shoo"></div>
+
+        <TopHouses docId="tophouse"></TopHouses>
+        <div className="sthalam"></div>
       </div>
-      </IonContent>
-    
+    </IonContent>
   );
 }
 

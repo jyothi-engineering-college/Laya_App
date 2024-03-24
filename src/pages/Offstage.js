@@ -3,13 +3,14 @@ import "../css/allitems.css";
 import { useAppContext } from "../context/appContext";
 import { useHistory } from "react-router-dom";
 
-const AllItems = () => {
+const Offstage = () => {
   const { allResult, eventList, setResult } = useAppContext();
   const history = useHistory();
 
   useEffect(() => {
-    allResult("onresults");
-    console.log(eventList);
+    allResult("offresults");
+        console.log(eventList);
+
   }, []);
 
   return (
@@ -18,24 +19,25 @@ const AllItems = () => {
       <div className="shoo"></div>
       <p className="rhd">ON - Stage Results</p>
       <button
-        onClick={() => {
-          history.push("/offstage");
+        onClick={() => { 
+          history.push("/allresults");
+           allResult("onresults");
         }}
       >
-        Looking for OFF - Stage results ?
+        Looking for ON - Stage results ?
       </button>
       <div className="grid-container">
         {eventList.map((event, key) => (
           <div
             onClick={() => {
-              setResult("onresults", event);
+              setResult("offresults", event);
               history.push("/result");
             }}
             key={key}
           >
             <center>
               <div className="grid-item">
-                <p>{event}</p> {/* Assuming event has a 'name' property */}
+                <p>{event}</p> 
               </div>
             </center>
             <br />
@@ -47,4 +49,5 @@ const AllItems = () => {
   );
 };
 
-export default AllItems;
+export default Offstage;
+ 
