@@ -1,4 +1,67 @@
+@font-face {
+    font-family: 'ClashDisplay-Bold';
+    src: url('../fonts/ClashDisplay-Bold.otf') format('woff');
+    /* You can include other font formats here if needed */
+  }
+  @font-face {
+    font-family: 'ClashDisplay-reg';
+    src: url('../fonts/ClashDisplay-Regular.otf') format('woff');
+    /* You can include other font formats here if needed */
+  }
 .filey {
     background-color:#FFE7E9 !important;
     height: 100%;
+    overflow-y: auto;
+}
+.filey p{
+    padding-top: 10px;
+    
+}
+.filey h2{
+    font-family: 'ClashDisplay-reg';
+    font-size: 30px;
+    padding-left: 10px;
+    text-align: center;
+}
+.imps
+{
+    font-family: 'ClashDisplay-reg';
+    padding-left: 10px;
+    font-size: 12px;
+}
+.scheduler
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 23.6px 1px rgba(152, 1, 19, 0.32);
+    margin: 8px;
+    border-radius: 12px;
+}
+.scheduler h3
+{
+    font-family: 'ClashDisplay-Bold';
+    font-size: 23px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.sloc{
+    font-family: 'ClashDisplay-reg';
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.sambhavams
+{
+    background: #E95C69;
+    padding: 10px;
+    border-radius: 12px;
+}
+.sambhavams p{
+    margin-top: 0;
+    font-family: 'ClashDisplay-reg';
+    font-size: 12px;
+    color: #ffffff;
+    
 }
