@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/Result.css";
+import { useAppContext } from "../context/appContext";
+
 const Result = () => {
+  const { eventResult } = useAppContext();
+  useEffect(() => {
+    console.log(eventResult);
+  }, []);
+
   return (
     <div>
-          <h1 className="resultheader">Result</h1>
-          <div className="shooresult"></div>
+      <h1 className="resultheader">Result</h1>
+      <div className="shooresult"></div>
 
       <center>
         {" "}
@@ -27,28 +34,28 @@ const Result = () => {
             <hr className="rowshr" width="90%" />
           </td>
           <tr>
-            <td>Smith</td>
-            <td>Logistics</td>
-            <td>South</td>
-            <td className="place1">East</td>
+            <td>{eventResult["name-1"]}</td>
+            <td>{eventResult["class-1"]}</td>
+            <td>{eventResult["house-1"]}</td>
+            <td className="place1">{eventResult["position-1"]}</td>
           </tr>
           <td colspan="4">
             <hr className="rowshr" width="90%" />
           </td>
           <tr>
-            <td>David</td>
-            <td>Transport</td>
-            <td>East</td>
-            <td className="place2">East</td>
+            <td>{eventResult["name-1"]}</td>
+            <td>{eventResult["class-1"]}</td>
+            <td>{eventResult["house-1"]}</td>
+            <td className="place1">{eventResult["position-1"]}</td>
           </tr>
           <td colspan="4">
             <hr className="rowshr" width="90%" />
           </td>
           <tr>
-            <td>Davisd</td>
-            <td>Transport</td>
-            <td>East</td>
-            <td className="place3">East</td>
+            <td>{eventResult["name-1"]}</td>
+            <td>{eventResult["class-1"]}</td>
+            <td>{eventResult["house-1"]}</td>
+            <td className="place1">{eventResult["position-1"]}</td>
           </tr>
           <td colspan="4">
             <hr className="rowshr" width="90%" />
