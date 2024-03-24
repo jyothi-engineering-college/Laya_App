@@ -1,67 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import { db } from "../firebase-config";
+import { collection, getDocs } from "firebase/firestore";
 import dum from "../img/dumms.gif";
 import "../css/Live.css";
-const Live = () => {
+function Live(){
+  const [live, setLive] = useState([]);
+    const liveCollectionRef = collection(db, "livenow");
+
+    useEffect(() => {
+      const getLive = async () => {
+          const data = await getDocs(liveCollectionRef);
+          setLive(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      };
+      getLive();
+  }, []);
+
   return (
     <div className="live">
       <h1 className="stageheader">Live Now</h1>
       <div className="shooresult"></div>
-      <div className="liveone">
-        <img className="bgimagelive" src={require("../img/live.png")} alt="" />
+      {live.map((event) => (
+      <center><div key={event.id} className="liveone">
 
         <div className="stagedetails">
           <img className="liveimg" src={dum} alt="lv"></img>
-          <p>Stage 1</p>
+          <p>Stage {event.stageno}</p>
         </div>
-        <h1 className="proname">Oppana</h1>
+        <h1 className="proname">{event.itemn}</h1>
         <div className="programdetails">
-          <span>Participants : 20</span>
+          <span>Participants : {event.participants}</span>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>ETC : 15 mins</span>
+          <span>ETC : {event.etc} mins</span>
         </div>
-      </div>
-      <div className="liveone">
-        <img className="bgimagelive" src={require("../img/live.png")} alt="" />
-
-        <div className="stagedetails">
-          <img className="liveimg" src={dum} alt="lv"></img>
-          <p>Stage 1</p>
-        </div>
-        <h1 className="proname">Oppana</h1>
         <div className="programdetails">
-          <span>Participants : 20</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>ETC : 15 mins</span>
+          <span>Stage Manager : {event.manager}</span>
         </div>
-      </div>{" "}
-      <div className="liveone">
-        <img className="bgimagelive" src={require("../img/live.png")} alt="" />
-
-        <div className="stagedetails">
-          <img className="liveimg" src={dum} alt="lv"></img>
-          <p>Stage 1</p>
-        </div>
-        <h1 className="proname">Oppana</h1>
-        <div className="programdetails">
-          <span>Participants : 20</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>ETC : 15 mins</span>
-        </div>
-      </div>{" "}
-      <div className="liveone">
-        <img className="bgimagelive" src={require("../img/live.png")} alt="" />
-
-        <div className="stagedetails">
-          <img className="liveimg" src={dum} alt="lv"></img>
-          <p>Stage 1</p>
-        </div>
-        <h1 className="proname">Oppana</h1>
-        <div className="programdetails">
-          <span>Participants : 20</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>ETC : 15 mins</span>
-        </div>
-      </div>
+      </div></center>
+    ))}
+      
+   
     </div>
   );
 };

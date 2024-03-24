@@ -11,22 +11,26 @@
 .live {
   background-color: #ffe7e9 !important;
   margin: 0;
-  padding: 20px 20px;
+  height: 100vh;
 }
 .stageheader {
   margin: 0;
   font-family: "ClashDisplay-Bold";
 }
 
-.bgimagelive {
-  position: relative;
+.liveone {
+  width: 100vw;
+height: 150px;
+
+background-image: url("../img/live.png");
+background-size: cover;
+background-repeat: none;
 }
 
 .stagedetails {
-  position: absolute;
   display: flex;
-  top: 120px;
-  left: 40px;
+  padding-top: 20px;
+  padding-left: 35px;
 }
 
 .stagedetails p {
@@ -42,27 +46,24 @@
 .liveimg {
   width: 15px;
   height: 15px;
-  position: relative;
-  top: 2px;
+  
 }
 
 .proname {
-  position: absolute;
-  top: 130px;
-  left: 40px;
   color: #000;
   font-family: "ClashDisplay-bold";
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  text-align: left;
+  padding-left: 35px;
+  margin: 3px;
 }
 
 .programdetails {
   display: flex;
-  position: absolute;
-  top: 200px;
-  left: 40px;
+  margin-top: 5px;
+  padding-left: 35px;
   color: #000;
   font-family: "ClashDisplay-reg";
   font-size: 14px;
