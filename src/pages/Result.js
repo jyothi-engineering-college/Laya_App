@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/Result.css";
+import { useAppContext } from "../context/appContext";
+
 const Result = () => {
+  const { allonResult, setResult, first, second, third } = useAppContext();
+  const Data = { first, second, third };
+  console.log(Data);
+  useEffect(() => {
+      allonResult();
+    // return () => {
+    //   second
+    // }
+
+    setResult("elocution-eng");
+  }, [])
+  
+
   return (
     <div>
-          <h1 className="resultheader">Result</h1>
-          <div className="shooresult"></div>
+      <h1 className="resultheader">Result</h1>
+      <div className="shooresult"></div>
 
       <center>
         {" "}
@@ -12,7 +27,9 @@ const Result = () => {
       </center>
       <div className="eventname">Oppana</div>
       <center>
-        <table>
+       
+
+        {/* <table>
           <tr>
             <th>Name</th>
             <th>Class</th>
@@ -53,7 +70,7 @@ const Result = () => {
           <td colspan="4">
             <hr className="rowshr" width="90%" />
           </td>
-        </table>
+        </table> */}
       </center>
       {/* </div> */}
     </div>
