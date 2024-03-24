@@ -58,7 +58,21 @@
     padding: 10px;
     border-radius: 12px;
 }
+.sambhavamso
+{
+    background: #A99949;
+    padding: 10px;
+    border-radius: 12px;
+}
+
 .sambhavams p{
+    margin-top: 0;
+    font-family: 'ClashDisplay-reg';
+    font-size: 12px;
+    color: #ffffff;
+    
+}
+.sambhavamso p{
     margin-top: 0;
     font-family: 'ClashDisplay-reg';
     font-size: 12px;

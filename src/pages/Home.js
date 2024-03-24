@@ -37,6 +37,14 @@ function Home() {
       
       <TopHouses docId="tophouse"></TopHouses>
       <div className="sthalam"></div>
+      <p className="rhd">Contacts</p>
+      <div className="shoo"></div>
+      <div className="sambhavamsh">
+        <p><b>Joseph Martin</b> - +91 75608 38960</p>
+        <p><b>Sephan Paul Jophy</b> - +91 95628 56902</p>
+        <p><b>Antony Joseph (Staff)</b> - +91 81380 73048</p>
+        <p><b>Alan Jose Santo (Web)</b> - +91 80863 50450</p>
+        </div>
       </div>
       </IonContent>
     
