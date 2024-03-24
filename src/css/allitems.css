@@ -12,12 +12,15 @@
 {
     background-color:#FFE7E9 !important;
     height: 100vh;
+        overflow-y: auto;
+
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    
     padding: 10px;
+            margin-bottom: 40px;
+
   }
   .grid-item {
     background-image: url("../img/ellipse-1.svg");
@@ -27,14 +30,13 @@
     width: 150px;
     height: 150px;
     padding: 20px;
-    font-size: 30px;
     text-align: center;
   }
   .grid-item p{
     color: #FFF;
 text-align: center;
 font-family: "ClashDisplay-Bold";
-font-size: 24px;
+font-size: 23px;
 font-style: normal;
 font-weight: 700;
 margin-top: 25px;

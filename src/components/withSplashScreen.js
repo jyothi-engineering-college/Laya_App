@@ -6,7 +6,7 @@ import 'animate.css';
 function SplashMessage() {
   return (
     <div className='splashmn'>
-      <div className='center-content'>
+      <div className='center-content animate__animated animate__bounce'>
         <img className='padaam' src={laya} alt='layaa' />
         <p className='thalaket'>LAYA ARTS FEST</p>
       </div>
@@ -30,7 +30,7 @@ export default function withSplashScreen(WrappedComponent) {
           this.setState({
             loading: false,
           });
-        }, 1500);
+        }, 2000);
       } catch (err) {
         console.log(err);
         this.setState({
