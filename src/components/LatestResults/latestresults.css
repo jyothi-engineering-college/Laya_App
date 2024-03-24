@@ -19,16 +19,28 @@
   
   .eachf {
     background-image: url("../../img/ellipse-1.svg");
-    width: 130px;
-    height: 130px;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
     margin-right: 10px; /* Add spacing between items */
   }
   
   .fitem1 {
     font-family: ClashDisplay-Bold;
-    font-size: 16px;
+    font-size: 12px;
     color: #FFF;
     margin: 0;
     text-align: center;
-    line-height: 130px; /* Center the text vertically */
+    line-height: 110px; /* Center the text vertically */
+  }
+  .linkey
+  {
+    font-family: ClashDisplay-Bold;
+    font-size: 12px;
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+    padding-left: 20px;
+    line-height: 110px;
+    text-decoration: none;
   }

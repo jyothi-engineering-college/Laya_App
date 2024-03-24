@@ -7,6 +7,11 @@
   src: url("../fonts/ClashDisplay-Regular.otf") format("woff");
 }
 
+ion-content{
+
+  --ion-background-color:#FFE7E9;
+}
+
 body {
   background-color: #ffdfe2;
   font-size: 9px;

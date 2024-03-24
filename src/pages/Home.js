@@ -36,7 +36,7 @@ function Home() {
       <div className="shoo"></div>
       
       <TopHouses docId="tophouse"></TopHouses>
-
+      <div className="sthalam"></div>
       </div>
       </IonContent>
     
