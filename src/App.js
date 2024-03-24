@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Route, Redirect } from "react-router";
-import { home,location,radio,albums,school} from "ionicons/icons";
+import { home,location,radio,albums,gameControllerSharp} from "ionicons/icons";
 
 import Home from "./pages/Home";
 import Result from "./pages/Result";
@@ -27,12 +27,13 @@ import "@ionic/react/css/text-alignment.css";
 import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/flex-utils.css";
 import "@ionic/react/css/display.css";
-import AllItems from "./pages/AllItems";
+import Files from "./pages/Files";
 import Stagedetails from "./pages/Stagedetails";
 import Live from "./pages/Live";
 import withSplashScreen from './components/withSplashScreen';
-
+import AllItems from "./pages/AllItems";
 import "../src/css/App.css"
+
 
 setupIonicReact({ mode: "md" });
 function App() {
@@ -44,10 +45,12 @@ function App() {
             <IonRouterOutlet>
 
               <Route path="/" render={() => <Home />} exact={true} />
-              <Route path="/all-items" render={() => <AllItems />} />
+              <Route path="/files" render={() => <Files/>} />
               <Route path="/stage-details" render={() => <Stagedetails />} />
               <Route path="/live" render={() => <Live />} />
               <Route path="/result" render={() => <Result />} />
+              <Route path="/allitems" render={() => <AllItems />} />
+              
             </IonRouterOutlet>
 
             <IonTabBar slot="bottom">
@@ -62,13 +65,13 @@ function App() {
               </IonTabButton>
 
               <IonTabButton tab="stage" href="/stage-details">
-                <IonIcon icon={location} />
-                <IonLabel>Stages</IonLabel>
+                <IonIcon icon={gameControllerSharp} />
+                <IonLabel>Games</IonLabel>
               </IonTabButton>
 
-              <IonTabButton tab="allitems" href="/all-items">
+              <IonTabButton tab="allitems" href="/files">
                 <IonIcon icon={albums} />
-                <IonLabel>Events</IonLabel>
+                <IonLabel>Schedule</IonLabel>
               </IonTabButton>
 
               

@@ -1,20 +1,8 @@
 import React, { useEffect } from "react";
 import "../css/Result.css";
-import { useAppContext } from "../context/appContext";
 
 const Result = () => {
-  const { allonResult, setResult, first, second, third } = useAppContext();
-  const Data = { first, second, third };
-  console.log(Data);
-  useEffect(() => {
-      allonResult();
-    // return () => {
-    //   second
-    // }
 
-    setResult("elocution-eng");
-  }, [])
-  
 
   return (
     <div>
