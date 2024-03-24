@@ -33,6 +33,7 @@ import Live from "./pages/Live";
 import withSplashScreen from './components/withSplashScreen';
 import AllItems from "./pages/AllItems";
 import "../src/css/App.css"
+import Offstage from "./pages/Offstage";
 
 
 setupIonicReact({ mode: "md" });
@@ -45,6 +46,7 @@ function App() {
             <IonRouterOutlet>
               <Route path="/" render={() => <Home />} exact={true} />
               <Route path="/files" render={() => <Files />} />
+              <Route path="/offstage" render={() => <Offstage />} />
               <Route path="/live" render={() => <Live />} />
               <Route path="/result" render={() => <Result />} />
               <Route path="/allresults" render={() => <AllItems />} />
