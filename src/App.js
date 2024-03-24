@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Route, Redirect } from "react-router";
-import { home,location,radio,albums,gameControllerSharp} from "ionicons/icons";
+import { home,school,radio,albums} from "ionicons/icons";
 
 import Home from "./pages/Home";
 import Result from "./pages/Result";
@@ -41,16 +41,14 @@ function App() {
     <IonApp>
       <IonContent className="ion-padding">
         <IonReactRouter>
-          <IonTabs >
+          <IonTabs>
             <IonRouterOutlet>
-
               <Route path="/" render={() => <Home />} exact={true} />
-              <Route path="/files" render={() => <Files/>} />
+              <Route path="/files" render={() => <Files />} />
               <Route path="/stage-details" render={() => <Stagedetails />} />
               <Route path="/live" render={() => <Live />} />
               <Route path="/result" render={() => <Result />} />
-              <Route path="/allitems" render={() => <AllItems />} />
-              
+              <Route path="/allresults" render={() => <AllItems />} />
             </IonRouterOutlet>
 
             <IonTabBar slot="bottom">
@@ -64,17 +62,15 @@ function App() {
                 <IonLabel>Live</IonLabel>
               </IonTabButton>
 
-              <IonTabButton tab="stage" href="/stage-details">
-                <IonIcon icon={gameControllerSharp} />
-                <IonLabel>Games</IonLabel>
+              <IonTabButton tab="allresults" href="/allresults">
+                <IonIcon icon={school} />
+                <IonLabel>Result</IonLabel>
               </IonTabButton>
 
               <IonTabButton tab="allitems" href="/files">
                 <IonIcon icon={albums} />
                 <IonLabel>Schedule</IonLabel>
               </IonTabButton>
-
-              
             </IonTabBar>
           </IonTabs>
         </IonReactRouter>

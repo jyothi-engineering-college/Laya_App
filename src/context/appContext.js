@@ -1,6 +1,6 @@
 import React, { useReducer, useContext } from "react";
 import reducer from "./reducers";
-import { SET_RESULT,SET_ALLRESULT } from "./actions";
+import { SET_ALLRESULT, SET_RESULT } from "./actions";
 import {
   collection,
   query,
@@ -12,7 +12,7 @@ import {
 import { db } from "../firebase-config";
 
 const initialState = {
-  
+ eventResult: {},
   eventList: [],
 };
 
@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const allonResult = async () => {
-    const q = query(collection(db, "onresults"));
+    const q = query(collection(db, "offresults"));
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
       dispatch({ type: SET_ALLRESULT, payload: doc.id });
@@ -30,15 +30,12 @@ const AppProvider = ({ children }) => {
   };
 
   const setResult = async (resultId) => {
-    const docRef = doc(db, "onresults", resultId);
+    const docRef = doc(db, "offresults", resultId);
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
-      dispatch({ type: SET_RESULT, payload: docSnap.data() });
-          console.log(initialState);
-
-      //  console.log("Document data:", docSnap.data());
-    } else {
+      dispatch({ type: SET_RESULT, payload: {eventResult:docSnap.data()} });
+   } else {
       // docSnap.data() will be undefined in this case
       console.log("No such document!");
     }
