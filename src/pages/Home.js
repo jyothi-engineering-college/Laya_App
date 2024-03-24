@@ -12,7 +12,7 @@ import TopHouses from "../components/TopHouses/TopHouses";
 
 function Home() {
   return (
-    <IonContent>
+    <IonContent>     
       <div className="App">
         <div className="header">
           <img style={{borderRadius:"50%",height:"50px",marginRight:"-150px"}} src={require("../img/logo.jpg")} alt="" srcset="" />
