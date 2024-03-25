@@ -116,3 +116,8 @@ table {
   background: linear-gradient(90deg, #180003 0%, #ffdfe2 100%);
   margin-bottom: 40px;
 }
+.resultd{
+  font-family: ClashDisplay-Bold;
+
+text-align: center;
+}

@@ -9,7 +9,6 @@ const Offstage = () => {
 
   useEffect(() => {
     allResult("offresults");
-        console.log(eventList);
 
   }, []);
 

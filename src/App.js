@@ -46,10 +46,7 @@ setupIonicReact({ mode: "md" });
 function App() {
   return (
     <div>
-      <BrowserView>
-        <Mobile/>
-      </BrowserView>
-      <MobileView>
+      
         <IonApp>
           <IonContent className="ion-padding">
             <IonReactRouter>
@@ -89,7 +86,6 @@ function App() {
             </IonReactRouter>
           </IonContent>
         </IonApp>
-      </MobileView>
     </div>
     // <Routes>
     //       <Route path="/" element={<SharedLayout />}>

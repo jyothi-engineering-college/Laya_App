@@ -37,6 +37,11 @@ function Header({ docId }) {
                                 </p>
                                 <p className="item1">{homepg.item}</p>
                             </div>
+                            <div style={{marginTop:"72px"}} className="lvp">
+                                <p className="ln">
+                                    Live Now
+                                </p>
+                            </div>
                         </div>
                     </a>
                 </center>

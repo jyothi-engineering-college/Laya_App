@@ -9,7 +9,6 @@ const AllItems = () => {
 
   useEffect(() => {
     allResult("onresults");
-    console.log(eventList);
   }, []);
 
   return (

@@ -5,7 +5,6 @@ import { useAppContext } from "../context/appContext";
 const Result = () => {
   const { eventResult, resultName } = useAppContext();
   useEffect(() => {
-    console.log(eventResult,resultName);
   }, []);
 
   return (
@@ -18,8 +17,7 @@ const Result = () => {
         <div className="imgevent"></div>
       </center>
       <div className="eventname">{resultName}</div>
-      <center>
-        <table>
+      {(eventResult["name-1"]=="dummy")?<h1 className="resultd">Result to be declared</h1>: <table>
           <tr>
             <th>Name</th>
             <th>Class</th>
@@ -60,11 +58,13 @@ const Result = () => {
           <td colspan="4">
             <hr className="rowshr" width="90%" />
           </td>
-        </table>
+        </table>}<center>
+       
       </center>
       {/* </div> */}
     </div>
   );
 };
+
 
 export default Result;
