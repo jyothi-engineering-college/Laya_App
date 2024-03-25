@@ -62,7 +62,7 @@ function Files() {
         </div>
       </div>
         
-      <h2>On Stage Items</h2>
+      {/* <h2>On Stage Items</h2>
       <div className="scheduler">
         <h3>Stage 1 - NoName</h3>
         <p className='sloc'>Auditorium  - <b>26/03/24</b></p>
@@ -108,7 +108,7 @@ function Files() {
         <p><b>Pencil Drawing</b> - 11.30 to 12.30</p>
         <p><b>Water Colouring</b> - 01.30 to 02.30</p>
         </div>
-      </div>
+      </div> */}
   
     </div>
   )
