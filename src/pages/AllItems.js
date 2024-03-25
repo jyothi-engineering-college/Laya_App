@@ -17,12 +17,12 @@ const AllItems = () => {
       <p className="rhd">All Results</p>
       <div className="shoo"></div>
       <p className="rhd">ON - Stage Results</p>
-      <button
+      <button 
         onClick={() => {
           history.push("/offstage");
         }}
       >
-        Looking for OFF - Stage results ?
+        Looking for OFF - Stage results ? CLICK HERE
       </button>
       <div className="grid-container">
         {eventList.map((event, key) => (

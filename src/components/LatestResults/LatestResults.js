@@ -1,58 +1,71 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { db } from "../../firebase-config";
-import { doc, getDoc } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import "./latestresults.css";
 import { Link } from "react-router-dom";
+import { useAppContext } from "../../context/appContext";
+import { useHistory } from "react-router-dom";
 
+function LatestResults() {
+  const [allresults, setallResults] = useState([]);
+  const { setResult } = useAppContext();
+  const history = useHistory();
 
-function LatestResults({ docId }) {
-    const [results, setResults] = useState(null);
+  useEffect(() => {
+    const fetchDocuments = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "offresults"));
+        const docId = querySnapshot.docs.map((doc) => doc.id);
 
-    useEffect(() => {
-        const getResults = async () => {
-            const docRef = doc(db, "homepg", docId);
-            const docSnap = await getDoc(docRef);
-            if (docSnap.exists()) {
-                setResults({id: docSnap.id, ...docSnap.data()});
-            } else {
-                console.log("No such document!");
-            }
-        };
-        if (docId) {
-            getResults();
-        }
-    }, [docId]);
+        const docs = querySnapshot.docs.map((doc) => doc.data());
+
+        const alldocs = docs.map((doc, index) => {
+          return {
+            ...doc,
+            id: docId[index],
+          };
+        });
+
+        setallResults(alldocs);
+        const filteredDocuments = alldocs.filter((doc) => doc.timestamp);
+
+        filteredDocuments.sort((a, b) => {
+          return b.timestamp - a.timestamp;
+        });
+        setallResults(filteredDocuments);
+      } catch (error) {
+        console.error("Error fetching documents: ", error);
+      }
+    };
+
+    fetchDocuments();
+  }, []);
 
   return (
     <div>
-      {results && (
-        <div className="rsltl">
-          <div className="frame1">
-
-            <div className="eachf">
-              <p className="fitem1">{results.item1}</p>
+      <div className="rsltl">
+        <div className="frame1">
+          {allresults.map((e) => (
+            <div
+              onClick={() => {
+               setResult("offresults", e.id);
+                history.push("/result");
+              }}
+              className="eachf"
+              key={e.id}
+            >
+              <p className="fitem1">{e.id}</p>
             </div>
-
-            <div className="eachf">
-              <p className="fitem1">{results.item2}</p>
-            </div>
-
-            <div className="eachf">
-              <p className="fitem1">{results.item3}</p>
-            </div>
-
-            <div className="eachf">
-              <p className="fitem1">{results.item4}</p>
-            </div>
-
-            <div className="eachf">
-            <Link className='linkey' to="/allresults">Get More</Link>
-            </div>
+          ))}
+          <div className="eachf">
+            <Link className="linkey" to="/allresults">
+              Get More
+            </Link>
           </div>
         </div>
-      )}
+      </div>
     </div>
-  )
+  );
 }
 
 export default LatestResults;

@@ -24,7 +24,7 @@ const Offstage = () => {
            allResult("onresults");
         }}
       >
-        Looking for ON - Stage results ?
+        Looking for ON - Stage results ? CLICK HERE
       </button>
       <div className="grid-container">
         {eventList.map((event, key) => (
