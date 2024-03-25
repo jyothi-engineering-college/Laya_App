@@ -30,7 +30,7 @@ function LatestResults() {
         const filteredDocuments = alldocs.filter((doc) => doc.timestamp);
 
         filteredDocuments.sort((a, b) => {
-          return b.timestamp - a.timestamp;
+          return a.timestamp - b.timestamp;
         });
         setallResults(filteredDocuments);
       } catch (error) {
