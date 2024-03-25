@@ -23,7 +23,7 @@ function Live(){
       <center><div key={event.id} className="liveone">
 
         <div className="stagedetails">
-          <img className="liveimg" src={dum} alt="lv"></img>
+          <img className="liveimg" srcSet={dum} alt="lv"></img>
           <p>Stage {event.stageno}</p>
         </div>
         <h1 className="proname">{event.itemn}</h1>

@@ -29,16 +29,15 @@ function Header({ docId }) {
                 <center>
                     <a href={homepg.link}>
                         <div className="livee">
-                            <img src={liveey} alt="bggs"></img>
+                            <img srcSet={liveey} alt="bggs"></img>
                             <div className="lvp">
                                 <p className="ln">
-                                    <img className="dumy" src={dum} alt="lv"></img>
+                                    <img className="dumy" srcSet={dum} alt="lv"></img>
                                     Live Now
                                 </p>
                                 <p className="item1">{homepg.item}</p>
                             </div>
                             </div>
-                        </div>
                     </a>
                 </center>
             )}

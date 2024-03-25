@@ -15,9 +15,9 @@ function Home() {
     <IonContent>     
       <div className="App">
         <div className="header">
-          <img style={{borderRadius:"50%",height:"50px",marginRight:"-150px"}} src={require("../img/logo.jpg")} alt="" srcset="" />
+          <img style={{borderRadius:"50%",height:"50px",marginRight:"-150px"}} srcSet={require("../img/logo.jpg")} alt="" srcSet="" />
           <p>Laya</p>
-          <img src={logo} alt="jylogo" className="logog"></img>
+          <img srcSet={logo} alt="jylogo" className="logog"></img>
         </div>
 
         <Header docId="header"></Header>

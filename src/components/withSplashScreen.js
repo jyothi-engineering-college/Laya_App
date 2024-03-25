@@ -7,7 +7,7 @@ function SplashMessage() {
   return (
     <div className='splashmn'>
       <div className='center-content animate__animated animate__bounce'>
-        <img className='padaam' src={laya} alt='layaa' />
+        <img className='padaam' srcSet={laya} alt='layaa' />
         <p className='thalaket'>LAYA ARTS FEST</p>
       </div>
     </div>
