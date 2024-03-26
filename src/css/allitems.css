@@ -1,55 +1,57 @@
 @font-face {
-    font-family: 'ClashDisplay-Bold';
-    src: url('../fonts/ClashDisplay-Bold.otf') format('woff');
-    /* You can include other font formats here if needed */
-  }
-  @font-face {
-    font-family: 'ClashDisplay-reg';
-    src: url('../fonts/ClashDisplay-Regular.otf') format('woff');
-    /* You can include other font formats here if needed */
-  }
-.ellamellam
-{
-    background-color:#FFE7E9 !important;
-    height: 100vh;
-        overflow-y: auto;
-
+  font-family: "ClashDisplay-Bold";
+  src: url("../fonts/ClashDisplay-Bold.otf") format("woff");
+  /* You can include other font formats here if needed */
+}
+@font-face {
+  font-family: "ClashDisplay-reg";
+  src: url("../fonts/ClashDisplay-Regular.otf") format("woff");
+  /* You can include other font formats here if needed */
+}
+.ellamellam {
+  background-color: #ffe7e9 !important;
+  height: 100vh;
+  overflow-y: auto;
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-            margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.grid-item {
+  background-image: url("../img/ellipse-1.svg");
+  background-size: contain;
+  display: block;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+}
+.grid-item p {
+  color: #fff;
+  text-align: center;
+  font-family: "ClashDisplay-reg";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 25px;
+  text-transform: capitalize;
+}
 
-  }
-  .grid-item {
-    background-image: url("../img/ellipse-1.svg");
-    background-size: contain;
-    display: block;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    padding: 20px;
-    text-align: center;
-  }
-  .grid-item p{
-    color: #FFF;
-text-align: center;
-font-family: "ClashDisplay-reg";
-font-size: 23px;
-font-style: normal;
-font-weight: 700;
-margin-top: 25px;
-text-transform: capitalize;
-  }
-
-    button {
-  background-color: #980113; 
-  border-radius: 10px;
+button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #d9172d;
+  text-align: center;
+  margin-left: 15px !important;
+  border-radius: 20px;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: ClashDisplay-reg;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-size: 16px;
 }

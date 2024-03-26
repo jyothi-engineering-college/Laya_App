@@ -34,9 +34,10 @@ td {
 
 table {
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
   height: 187px;
-  flex-shrink: 0;
   border-collapse: separate;
   border: 1px #ffdfe2 solid;
   box-shadow: 0px 0px 23.6px 1px rgba(152, 1, 19, 0.32);
@@ -102,13 +103,12 @@ table {
   left: 0;
   right: 0;
   top: 173px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 380px;
+  text-align: center;
   z-index: 20;
   color: #fff;
   font-family: ClashDisplay-Bold;
   font-size: 32px;
+  text-transform: capitalize;
 }
 
 .shooresult {
