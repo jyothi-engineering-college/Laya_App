@@ -34,6 +34,7 @@
     margin: 0;
     text-align: center;
   padding-top: 40px; /* Center the text vertically */
+  text-transform: capitalize;
   }
   .linkey
   {

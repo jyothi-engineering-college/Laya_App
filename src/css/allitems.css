@@ -35,11 +35,12 @@
   .grid-item p{
     color: #FFF;
 text-align: center;
-font-family: "ClashDisplay-Bold";
+font-family: "ClashDisplay-reg";
 font-size: 23px;
 font-style: normal;
 font-weight: 700;
 margin-top: 25px;
+text-transform: capitalize;
   }
 
     button {
