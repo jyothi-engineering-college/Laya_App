@@ -1,3 +1,5 @@
+
+import React, {useEffect } from "react";
 import {
   setupIonicReact,
   IonApp,
@@ -15,6 +17,7 @@ import {
 import { IonReactRouter } from "@ionic/react-router";
 import { Route, Redirect } from "react-router";
 import { homeOutline, school, radio, albums } from "ionicons/icons";
+
 
 import Home from "./pages/Home";
 import Result from "./pages/Result";
@@ -40,10 +43,19 @@ import "../src/css/App.css";
 import Offstage from "./pages/Offstage";
 import Error from "./pages/Error";
 import { BrowserView, MobileView } from "react-device-detect";
+import "../src/css/App.css";
+import OneSignal from 'react-onesignal';
 import Mobile from "./pages/Mobile";
+
 
 setupIonicReact({ mode: "md" });
 function App() {
+
+  useEffect(() => {
+    OneSignal.init({
+      appId: "edac7906-c7da-4a69-a975-f707911dec7"
+    });
+  }, []);
   return (
 
 
@@ -52,8 +64,6 @@ function App() {
       <Mobile />
     </BrowserView>
     <MobileView>
-
-      
       <IonApp>
         <IonContent className="ion-padding">
           <IonReactRouter>

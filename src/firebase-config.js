@@ -12,6 +12,7 @@ const firebaseConfig = {
   storageBucket: "laya-app-4ef7c.appspot.com",
   messagingSenderId: "409888583397",
   appId: "1:409888583397:web:dbfc82eff04f0138636e0c",
+
 };
 
 // Initialize Firebase
