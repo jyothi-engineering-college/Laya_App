@@ -30,7 +30,7 @@ function Live(){
         <div className="programdetails">
           <span>Participants : {event.participants}</span>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>ETC : {event.etc} mins</span>
+          <span>ETC : {event.etc}</span>
         </div>
         <div className="programdetails">
           <span>Stage Manager : {event.manager}</span>

@@ -44,22 +44,23 @@ import Offstage from "./pages/Offstage";
 import Error from "./pages/Error";
 import { BrowserView, MobileView } from "react-device-detect";
 import "../src/css/App.css";
-import OneSignal from 'react-onesignal';
+// import OneSignal from 'react-onesignal';
 import Mobile from "./pages/Mobile";
 
 
 setupIonicReact({ mode: "md" });
 function App() {
 
-  useEffect(() => {
-    OneSignal.init({
-      appId: "edac7906-c7da-4a69-a975-f707911dec7a"
-    });
-  }, []);
+  // useEffect(() => {
+  //   OneSignal.init({
+  //     appId: "edac7906-c7da-4a69-a975-f707911dec7a"
+  //   });
+  // }, []);
   return (
 
 
-  <div>
+    <div>
+ 
     <BrowserView>
       <Mobile />
     </BrowserView>
@@ -103,7 +104,7 @@ function App() {
           </IonReactRouter>
         </IonContent>
       </IonApp>
-    </MobileView>
+        </MobileView>
   </div>
  
   );
