@@ -27,12 +27,13 @@
   
   .fitem1 {
     font-family: ClashDisplay-Bold;
-    font-size: 9px;
+    font-size: 12px;
     color: #FFF;
+    white-space: pre-wrap;
     word-wrap: break-word;
     margin: 0;
     text-align: center;
-    line-height: 110px; /* Center the text vertically */
+  padding-top: 40px; /* Center the text vertically */
   }
   .linkey
   {
