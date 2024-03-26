@@ -4,8 +4,7 @@ import { useAppContext } from "../context/appContext";
 
 const Result = () => {
   const { eventResult, resultName } = useAppContext();
-  useEffect(() => {
-  }, []);
+  
 
   return (
     <div>
