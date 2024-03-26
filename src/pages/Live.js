@@ -19,26 +19,25 @@ function Live(){
     <div className="live">
       <h1 className="stageheader">Live Now</h1>
       <div className="shooresult"></div>
-      {live.map((event) => (
-      <center><div key={event.id} className="liveone">
-
-        <div className="stagedetails">
-          <img className="liveimg" srcSet={dum} alt="lv"></img>
-          <p>Stage {event.stageno}</p>
-        </div>
-        <h1 className="proname">{event.itemn}</h1>
-        <div className="programdetails">
-          <span>Participants : {event.participants}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>ETC : {event.etc}</span>
-        </div>
-        <div className="programdetails">
-          <span>Stage Manager : {event.manager}</span>
-        </div>
-      </div></center>
-    ))}
-      
-   
+      {live.map((event, key) => (
+        <center key={key}>
+          <div className="liveone">
+            <div className="stagedetails">
+              <img className="liveimg" srcSet={dum} alt="lv"></img>
+              <p>Stage {event.stageno}</p>
+            </div>
+            <h1 className="proname">{event.itemn}</h1>
+            <div className="programdetails">
+              <span>Participants : {event.participants}</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>ETC : {event.etc}</span>
+            </div>
+            <div className="programdetails">
+              <span>Stage Manager : {event.manager}</span>
+            </div>
+          </div>
+        </center>
+      ))}
     </div>
   );
 };

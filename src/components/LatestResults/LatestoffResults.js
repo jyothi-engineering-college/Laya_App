@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useAppContext } from "../../context/appContext";
 import { useHistory } from "react-router-dom";
 
-function LatestResults() {
+function LatestoffResults() {
   const [allresults, setallResults] = useState([]);
   const { setResult } = useAppContext();
   const history = useHistory();
@@ -68,4 +68,4 @@ function LatestResults() {
   );
 }
 
-export default LatestResults;
+export default LatestoffResults;
