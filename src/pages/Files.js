@@ -7,7 +7,7 @@ function Files() {
         <p className="rhd">Schedule</p>
       <div className="shoo"></div>
       <p className='imps'>Mark your timings and store your slots on the brain !</p>
-      <h2>Off Stage Items</h2>
+      {/*<h2>Off Stage Items</h2>
       <div className="scheduler">
         <h3>Stage 1 - Rithu</h3>
         <p className='sloc'>EAB 416  - <b>25/03/24</b></p>
@@ -61,7 +61,7 @@ function Files() {
         <p><b>Water Colouring</b> - 01.30 to 02.30</p>
         </div>
       </div>
-        
+        */}
        <h2>On Stage Items</h2>
       <div className="scheduler">
         <h3>Stage 1 - Greeshmam</h3>
