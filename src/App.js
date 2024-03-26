@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, {useEffect } from "react";
 import {
   setupIonicReact,
   IonApp,
@@ -14,6 +15,7 @@ import { IonReactRouter } from "@ionic/react-router";
 import { Route } from "react-router";
 import { homeOutline, school, radio, albums } from "ionicons/icons";
 
+
 import Home from "./pages/Home";
 import Result from "./pages/Result";
 import Files from "./pages/Files";
@@ -26,11 +28,18 @@ import Mobile from "./pages/Mobile";
 import withSplashScreen from "./components/withSplashScreen";
 import { BrowserView, MobileView } from "react-device-detect";
 import "../src/css/App.css";
+import OneSignal from 'react-onesignal';
+
 
 setupIonicReact({ mode: "md" });
 
 function App() {
-  let maintain = true;
+
+  useEffect(() => {
+    OneSignal.init({
+      appId: "edac7906-c7da-4a69-a975-f707911dec7"
+    });
+  }, []);
   return (
     <div>
       {maintain ? (

@@ -1,9 +1,6 @@
 import "../css/Home.css";
 import logo from "../img/header_jy.png";
 
-import 'remixicon/fonts/remixicon.css';
-
-
 import { IonContent } from "@ionic/react";
 import Header from "../components/header/Header";
 import LatestResults from "../components/LatestResults/LatestResults";
@@ -12,10 +9,14 @@ import TopHouses from "../components/TopHouses/TopHouses";
 
 function Home() {
   return (
+
+  
+
     <IonContent>     
       <div className="App">
         <div className="header">
           <img style={{borderRadius:"50%",height:"50px",marginRight:"-150px"}} srcSet={require("../img/logo.jpg")} alt="" src="" />
+
           <p>Laya</p>
           <img srcSet={logo} alt="jylogo" className="logog"></img>
         </div>
