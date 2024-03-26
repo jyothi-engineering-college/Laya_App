@@ -12,6 +12,7 @@
   background-color: #ffe7e9 !important;
   margin: 0;
   height: 100vh;
+  overflow-y: auto;
 }
 .stageheader {
   margin: 0;
