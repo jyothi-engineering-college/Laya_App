@@ -49,7 +49,7 @@ setupIonicReact({ mode: "md" });
 function App() {
   useEffect(() => {
     OneSignal.init({
-      appId: "edac7906-c7da-4a69-a975-f707911dec7"
+      appId: "edac7906-c7da-4a69-a975-f707911dec7a"
     });
   }, []);
   return (
