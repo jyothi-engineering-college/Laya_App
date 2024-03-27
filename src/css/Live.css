@@ -10,9 +10,8 @@
 }
 .live {
   background-color: #ffe7e9 !important;
-  margin: 0;
-  height: 100vh;
-  overflow-y: auto;
+  max-height: 850px;
+  overflow-y: scroll;
 }
 .stageheader {
   margin: 0;
@@ -21,11 +20,11 @@
 
 .liveone {
   width: 100vw;
-height: 150px;
+  height: 150px;
 
-background-image: url("../img/live.png");
-background-size: cover;
-background-repeat: none;
+  background-image: url("../img/live.png");
+  background-size: cover;
+  background-repeat: none;
 }
 
 .stagedetails {
@@ -47,7 +46,6 @@ background-repeat: none;
 .liveimg {
   width: 15px;
   height: 15px;
-  
 }
 
 .proname {
