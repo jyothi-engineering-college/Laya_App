@@ -1,20 +1,20 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBp5S3PdJGWyBrN6tISh-cpoQtsOyOz8yw",
-  authDomain: "laya-2.firebaseapp.com",
-  projectId: "laya-2",
-  storageBucket: "laya-2.appspot.com",
-  messagingSenderId: "363270620914",
-  appId: "1:363270620914:web:47e38f665e66159487326b",
-  measurementId: "G-9WFKCPJMW0",
+  apiKey: "AIzaSyC-GSHgnm4VYMa7NopDmVC3g6uoP1iKwWk",
+  authDomain: "laya-3.firebaseapp.com",
+  projectId: "laya-3",
+  storageBucket: "laya-3.appspot.com",
+  messagingSenderId: "38190967812",
+  appId: "1:38190967812:web:e17e3cd5aaad6f83bbd951",
+  measurementId: "G-QW77DB2NEW",
 };
 
 // Initialize Firebase

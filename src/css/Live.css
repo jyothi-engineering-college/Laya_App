@@ -10,9 +10,6 @@
 }
 .live {
   background-color: #ffe7e9 !important;
-  margin: 0;
-  height: 100vh;
-  overflow-y: auto;
 }
 .stageheader {
   margin: 0;
@@ -21,7 +18,6 @@
 
 .liveone {
   width: 100vw;
-height: 150px;
 
 background-image: url("../img/live.png");
 background-size: cover;
