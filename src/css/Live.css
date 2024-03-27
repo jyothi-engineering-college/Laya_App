@@ -10,6 +10,13 @@
 }
 .live {
   background-color: #ffe7e9 !important;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.layaspace
+{
+  height: 100px;
 }
 .stageheader {
   margin: 0;
@@ -18,7 +25,7 @@
 
 .liveone {
   width: 100vw;
-
+height: 150px;
 background-image: url("../img/live.png");
 background-size: cover;
 background-repeat: none;
