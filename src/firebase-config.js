@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC-GSHgnm4VYMa7NopDmVC3g6uoP1iKwWk",
-  authDomain: "laya-3.firebaseapp.com",
-  projectId: "laya-3",
-  storageBucket: "laya-3.appspot.com",
-  messagingSenderId: "38190967812",
-  appId: "1:38190967812:web:e17e3cd5aaad6f83bbd951",
-  measurementId: "G-QW77DB2NEW",
+  apiKey: "AIzaSyDhyojtfpE8ibzn-i-PVedgkPMo28SSmVw",
+  authDomain: "laya-4.firebaseapp.com",
+  projectId: "laya-4",
+  storageBucket: "laya-4.appspot.com",
+  messagingSenderId: "933689873372",
+  appId: "1:933689873372:web:e68b08f229f54690be3519",
+  measurementId: "G-029WQEG6XZ"
 };
 
 // Initialize Firebase
