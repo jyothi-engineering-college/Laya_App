@@ -30,11 +30,11 @@ function Home() {
         </div>
 
         <Header docId="header"></Header>
-{/* 
+
         <p className="rhd">Latest ON-STAGE&nbsp; Results</p>
         <div className="shoo"></div>
 
-        <LatestonResults docId="latestres"></LatestonResults> */}
+        <LatestonResults docId="latestres"></LatestonResults>
         <p className="rhd">Latest OFF-STAGE&nbsp; Results</p>
         <div className="shoo"></div>
 

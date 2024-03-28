@@ -48,7 +48,7 @@ function LatestonResults() {
           {allresults.map((e) => (
             <div
               onClick={() => {
-                setResult("offresults", e.id);
+                setResult("onresults", e.id);
                 history.push("/result");
               }}
               className="eachf"

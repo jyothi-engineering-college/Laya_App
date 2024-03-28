@@ -33,6 +33,7 @@ function LatestoffResults() {
           return b.timestamp - a.timestamp;
         });
         setallResults(filteredDocuments);
+        console.log(filteredDocuments);
       } catch (error) {
         console.error("Error fetching documents: ", error);
       }
